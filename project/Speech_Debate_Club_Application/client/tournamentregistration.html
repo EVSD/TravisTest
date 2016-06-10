@@ -1,0 +1,34 @@
+<!-- This html document implements tournament registration for the website -->
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+</head>
+
+
+  <template name="tournamentregistration">
+    <div class="container">
+      <h3>Sign up for a tournament</h3>
+      <form class="registration">
+        <div id="selectTournament">
+          <p>Tournament:</p>
+          {{#each tournamentList}}
+            <input type="radio" name="tournament" value="{{availableTournament}}"> {{availableTournament}}
+          {{/each}}
+        </div>
+        <div id="selectEvent">
+          <p>Event:</p>
+            <input type="radio" name="whatEvent" value="LD"> LD
+            <input type="radio" name="whatEvent" value="Policy"> Policy
+            <input type="radio" name="whatEvent" value="Parli"> Parli
+        </div>
+        <div>
+          <p>Partner:</p>
+            {{#each allowedPerson}}
+              <input type="radio" name="partner" value="{{availablePartner}}"> {{availablePartner}}
+            {{/each}}
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </template>
