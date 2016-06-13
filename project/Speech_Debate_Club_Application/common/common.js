@@ -1,3 +1,4 @@
+
 FilesCollection = new Mongo.Collection ('files');
 TournamentHistory = new Mongo.Collection ('tourneys');
 ParentEmails = new Mongo.Collection ('emails');
