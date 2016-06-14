@@ -12,4 +12,5 @@ services:
  - mongodb
 
 script:
+ - meteor update
  - meteor --settings settings.json
