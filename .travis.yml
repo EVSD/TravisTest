@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+ - '4.x'
+before_install:
+ - curl https://install.meteor.com/ | sh
+services:
+ - mongodb
+script:
+ - meteor --settings settings.json
