@@ -1,17 +1,8 @@
 sudo: required
-
 language: node_js
-
 node_js:
- - '4.4.5'
+  - "0.8"
+  - "0.10"
 
 before_install:
- - curl https://install.meteor.com/ | sh
-
-services:
- - mongodb
-
-script:
- - meteor update
- - meteor --settings settings.json
- - exit
+  - "curl -L http://git.io/ejPSng | /bin/sh"
