@@ -1,0 +1,36 @@
+<head>
+  <title>evsd-placeholder</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+</head>
+
+<body>
+  <center style="font-size:100px;font-weight:500;padding:50px">UNDER CONSTRUCTION</center>
+  <div class="valign-wrapper">
+    <span class="valign" style="font-size:70px;font-weight:100;padding:50px">This is just the placeholder for the Evergreen Valley High School Speech and Debate Club website. Do hold on while our webmasters are figuring how to web dev. Cheers!</span>
+  </div>
+  <span class="valign" style="color:white">Hey look hidden text</span>
+
+  <footer class="page-footer" style="position:fixed;bottom:0;left:0;right:0;height:auto;">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footers are cool. Trust me chap.</h5>
+          {{> hello}}
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <a class="grey-text text-lighten-2" href="https://github.com/aeolyus" target="_blank">&copy; Richard Huang</a>
+        <a class="grey-text text-lighten-2 right" href="https://tldrlegal.com/license/mit-license" target="_blank">MIT License</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<template name="hello">
+  <span class="white-text">In the meantime please enjoy this brilliant button.</span>
+  <br>
+  <button class="btn waves-effect waves-light">Click me. I dare you. Do it you won't.</button>
+  <span class="white-text">You've pressed the button {{counter}} times.</span>
+</template>

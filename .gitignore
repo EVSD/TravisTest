@@ -1,1 +1,2 @@
-project/.meteor/local
+node_modules/
+.meteor/local
